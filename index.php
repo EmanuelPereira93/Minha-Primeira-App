@@ -49,7 +49,7 @@ require_once 'templates/head.php';
 if (file_exists($page_template)) {
     require_once $page_template;
 } else {
-    /* importa a página de erro 404 not found */
+   
     require_once 'templates/page_not_found.php';
 }
 
