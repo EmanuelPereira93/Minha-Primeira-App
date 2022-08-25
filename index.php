@@ -17,7 +17,7 @@ if (empty($_GET['route'])) {
 }
 
 
-switch ('$page') {
+switch ($page) {
 
     case 'dashboard';
 
@@ -49,7 +49,6 @@ require_once 'templates/head.php';
 if (file_exists($page_template)) {
     require_once $page_template;
 } else {
-   
     require_once 'templates/page_not_found.php';
 }
 
